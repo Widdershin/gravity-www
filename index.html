@@ -1,0 +1,118 @@
+<!DOCTYPE HTML -->
+<head>
+  <title>Gravity Tech</title>
+  <style type="text/css">
+  html, body {
+    background: black;
+      width: 100vw;
+    color: white;
+      font-family: sans-serif;
+        overflow-x: hidden;
+          min-height: 175vh;
+  }
+
+  .container {
+    width: 100vw;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .circle {
+    border: 1px solid #111;
+      justify-self: start;
+    width: 75vw;
+    height: 75vw;
+    border-radius: 75vw;
+      flex-shrink: 0;
+        flex-grow: 0;
+    animation: hueRotate 20s linear 0s infinite;
+    transform: translate(0%, -50%);
+    margin-top: 45vh;
+    margin-bottom: -37.5vw;
+  }
+
+
+  .letters {
+    display: flex;
+    margin: 2vh 0;
+    margin-bottom: 5vh;
+    width: 100px;
+    justify-content: center;
+    font-family: Gill Sans;
+    color: #111;
+  }
+
+  .letter {
+    user-select: none;
+    -moz-user-select: none;
+    font-size: 10vw;
+    margin: 2vw;
+    margin-top: 0;
+    margin-bottom: 0vh;
+    font-weight: lighter;
+  }
+
+  .letter:hover {
+    color: #222;
+  }
+
+  p {
+    width: 60%;
+    font-weight: 300;
+    font-size: larger;
+  }
+
+@keyframes hueRotate {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+ @media screen and (min-aspect-ratio:1/1) { 
+
+   .letter {
+    font-size: 8vw;
+   }
+  .circle {
+    width: 75vh;
+    height: 75vh;
+    border-radius: 75vh;
+      margin-bottom: -37.5vh;
+  }
+
+ }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle"></div>
+    <div class="letters">
+      <div class="letter">G</div>
+      <div class="letter">R</div>
+      <div class="letter">A</div>
+      <div class="letter">V</div>
+      <div class="letter">I</div>
+      <div class="letter">T</div>
+      <div class="letter">Y</div>
+    </div>
+    <div class="underline"/></div>
+    <p>Gravity is a company I have founded working towards a better future for Earth.</p>
+    <p>Gravity's goals are to secure peace and prosperity for life on Earth for millenia to come.</p>
+    <p>Gravity's first goal is to help address climate change.</p>
+
+    <p>- Nick Johnstone</p>
+  </div>
+
+</body
